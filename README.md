@@ -11,7 +11,7 @@ and the Person thread.
 
 Elevator:
 - The elevator thread exists in a loop. It handles its own state and movement,
-  going up or down a floor for each clock pulse (see aside), and opening the
+  going up or down a floor for each clock pulse (see details), and opening the
   doors by signaling a cond_var. It has an array of buttons that are used to
   both influence where the elevator goes next, and decide at which floors it
   will open its doors.
