@@ -1,0 +1,15 @@
+Brainstorming elevators:
+
+- Create elevators (get back a manager for them)
+
+
+- People can call elevator to a floor
+	- This will trigger a condition variable on the person to sleep until elevator arrives
+
+- Once elevator arrives, cond_broadcast to everyone on the floor
+	- Each person wakes up, acquires lock and enters elevator
+	- Once there's no one else waiting, or if capacity is full, signal to elevator to leave
+
+- At the end of this process, the elevator determines a new destination depending on where it's called to
+
+- Elevator moves on a tick-system

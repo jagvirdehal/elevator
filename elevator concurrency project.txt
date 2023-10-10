@@ -1,0 +1,27 @@
+elevator concurrency project:
+
+Create an elevator simulation and algorithm in C
+
+General:
+- simulates F floors and E elevators specified by the user
+- there are R - V people living on each floor, which is the rooms on each floor, and the # of people vacant
+
+Building:
+- up/down call buttons on each floor
+
+People:
+- decide which floors to visit based on a weighted list
+	- weighs the ground floor and home equally
+	- other floors have chance of having a weight (low)
+
+Elevator:
+- arbitrary algorithm/state machine for deciding where to stop
+	- can be easily swapped out without affecting rest of the functionality
+
+Measurement:
+- average wait time of people per floor
+
+
+
+How it works:
+

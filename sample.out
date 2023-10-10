@@ -1,0 +1,45 @@
+Elevator (1) created!
+Elevator (0) created!
+Person (1 -> 0) created!
+Person (3 -> 7) created!
+Person (5 -> 0) created!
+Elevator (1) called!
+    ~clock E0:(0-) E1:(1^)~
+Elevator (0) called!
+    ~clock E0:(1^) E1:(2^)~
+E0: Opening door
+    ~clock E0:(1^) E1:(3^)~
+E1: Opening door
+    ~clock E0:(1-) E1:(3^)~
+    ~clock E0:(0v) E1:(3^)~
+E0: Opening door
+Person (1 -> 0) arrived!
+    ~clock E0:(0v) E1:(4^)~
+    ~clock E0:(0-) E1:(5^)~
+    ~clock E0:(0-) E1:(6^)~
+Elevator (0) called!
+    ~clock E0:(1^) E1:(7^)~
+E1: Opening door
+    ~clock E0:(2^) E1:(7^)~
+Person (3 -> 7) arrived!
+    ~clock E0:(3^) E1:(7-)~
+    ~clock E0:(4^) E1:(7-)~
+    ~clock E0:(5^) E1:(7-)~
+E0: Opening door
+    ~clock E0:(5^) E1:(7-)~
+    ~clock E0:(5-) E1:(7-)~
+    ~clock E0:(4v) E1:(7-)~
+    ~clock E0:(3v) E1:(7-)~
+    ~clock E0:(2v) E1:(7-)~
+    ~clock E0:(2v) E1:(7-)~
+    ~clock E0:(1v) E1:(7-)~
+    ~clock E0:(0v) E1:(7-)~
+    ~clock E0:(0v) E1:(7-)~
+E0: Opening door
+Person (5 -> 0) arrived!
+    ~clock E0:(0v) E1:(7-)~
+    ~clock E0:(0-) E1:(7-)~
+    ~clock E0:(0-) E1:(7-)~
+    ~clock E0:(0-) E1:(7-)~
+    ~clock E0:(0-) E1:(7-)~
+    ~clock E0:(0-) E1:(7-)~
