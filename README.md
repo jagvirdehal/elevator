@@ -6,6 +6,22 @@ I created an elevator program in C to practice and present my skills with
 concurrency and parallel programming. The program extensively uses mutexes,
 semaphores and condition variables to create the overall system.
 
+There are two main threads that interact with each other, the Elevator thread,
+and the Person thread.
+
+Elevator:
+- The elevator thread exists in a loop. It handles its own state and movement,
+  going up or down a floor for each clock pulse (see aside), and opening the
+  doors by signaling a cond_var. It has an array of buttons that are used to
+  both influence where the elevator goes next, and decide at which floors it
+  will open its doors.
+
+Person:
+- The person thread simply desires to go from floor `src` to floor `dest`. It
+  calls the elevator that it thinks will serve it best, and once the doors open,
+  it will enter the elevator and push the `dest` button. Once it arrives at the
+  `dest` floor, the person leaves and the thread exits.
+
 My long-term goals with the project are to tighten the algorithm for calling
 and sending elevators to minimize the average wait-time per person.
 
